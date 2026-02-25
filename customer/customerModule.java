@@ -28,16 +28,13 @@ public class customerModule {
         String priority;
 
         // Default Priority is Medium
-        switch (priorityInp) {
-            case "1":
-                priority = "Low";
-                break;
-            case "2":
-                priority = "Hight";
-                break;
-            default:
-                priority = "Medium";
-                break;
+        if (priorityInp.equals("1")){
+            priority = "Low";
+        }
+        else if (priorityInp.equals("2")){
+            priority = "High";
+        } else {
+            priority = "Medium";
         }
 
         Complaint newComplaint = new Complaint(id, desc, priority);
