@@ -32,6 +32,7 @@ public class Main {
             else
                 System.out.println("Invalid Number of Choice");
         }
+
         System.out.println("Bye!");
         scanner.close();
 
