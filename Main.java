@@ -1,4 +1,8 @@
+import customer.Complaint;
+import customer.customerModule;
+
 import java.util.Scanner;
+
 
 public class Main {
     public static void main(String[] args){
@@ -12,17 +16,12 @@ public class Main {
             System.out.println("4. Exit");
             System.out.println("Please choose an Option: ");
 
-            if (!scanner.hasNextInt()){
-                System.out.println("Invalid Input type");
-                scanner.nextLine();
-                continue;
-            }
-
             int choice = scanner.nextInt();
             scanner.nextLine();
 
-            if ( choice == 1 )
-                System.out.println(" ");
+            if ( choice == 1 ) {
+                customerModule.CustomerMenu(scanner);
+            }
             else if ( choice == 2 )
                 System.out.println(" ");
             else if ( choice == 3 )
